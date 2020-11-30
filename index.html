@@ -3,18 +3,79 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <title>jacobgentry.me</title>
+    <style media="screen">
+      h1, h2, h3, h4, h5, h6 {
+        font-family: "Dosis";
+      }
+      p {
+        font-family: "Open Sans"
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%
+      }
+    </style>
   </head>
   <body class="w3-black">
-    <div class="w3-container w3-black w3-display-container">
-      <h1 class="w3-xlarge">jacobgentry.me</h1>
+    <!-- Header -->
+    <header id="myHeader" class="w3-container w3-black w3-display-container">
+      <h1 class="w3-xlarge"><b>Jacobgentry.me<b></h1>
       <a href="#">
         <div class="w3-container w3-display-right">
           <i class="fa fa-bars w3-xlarge"></i>
         </div>
       </a>
+    </header>
+    <!-- Body -->
+    <div class="w3-container w3-display-container" style="width:100%; height:50%">
+      <!-- Image holder -->
+      <div class ="w3-container w3-display-center">
+        <img src="Images/dark-cowboy-hat.png" alt="cowboy hat" style="display:block; margin-left:auto; margin-right:auto; width:100%; max-width:491px;">
+      </div>
+      <!-- Biographical paragraph -->
+      <div class="w3-container">
+        <h2>About me</h2>
+        <p>Bacon ipsum dolor amet et officia sed in irure, tempor fugiat. Deserunt capicola nisi ut do pork belly lorem kielbasa aliquip enim mollit. Flank beef brisket ham. Aliqua ipsum jowl, sirloin venison chuck alcatra. Kevin aute anim, turkey filet mignon pig aliqua ex ground round pork chop enim shankle occaecat culpa. Turkey corned beef burgdoggen flank, laboris sirloin do kielbasa. Nisi tenderloin tempor nulla cillum, tail ball tip pancetta consectetur aliquip meatball ham hock strip steak landjaeger magna.</p>
+        <p>Strip steak id leberkas consectetur shankle excepteur quis shank alcatra. In andouille leberkas ut. Elit chislic proident, chicken kielbasa qui jowl ribeye minim. Sint leberkas kielbasa, elit meatloaf pancetta ut.</p>
+      </div>
+      <div class="w3-container">
+        <h2>About me</h2>
+        <p>Bacon ipsum dolor amet et officia sed in irure, tempor fugiat. Deserunt capicola nisi ut do pork belly lorem kielbasa aliquip enim mollit. Flank beef brisket ham. Aliqua ipsum jowl, sirloin venison chuck alcatra. Kevin aute anim, turkey filet mignon pig aliqua ex ground round pork chop enim shankle occaecat culpa. Turkey corned beef burgdoggen flank, laboris sirloin do kielbasa. Nisi tenderloin tempor nulla cillum, tail ball tip pancetta consectetur aliquip meatball ham hock strip steak landjaeger magna.</p>
+        <p>Strip steak id leberkas consectetur shankle excepteur quis shank alcatra. In andouille leberkas ut. Elit chislic proident, chicken kielbasa qui jowl ribeye minim. Sint leberkas kielbasa, elit meatloaf pancetta ut.</p>
+      </div>
+      <!-- Projects -->
+      <div class="">
+
+      </div>
     </div>
+    <!-- Footer -->
+    <footer class="w3-container">
+
+    </footer>
+    <script type="text/javascript">
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {scrollFunct()};
+
+    // Get the header
+    var header = document.getElementById("myHeader");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function scrollFunct() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+    }
+    </script>
   </body>
 </html>
